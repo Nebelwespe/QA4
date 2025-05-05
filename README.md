@@ -11,7 +11,7 @@
 
 ### .env
 
-`OPENAI_API_KEY=YOUROPENAIKEY
+OPENAI_API_KEY=YOUROPENAIKEY
 
 NEWS_API_KEY=482238d36fab4a758bd33e52a5aae093
 
@@ -19,7 +19,8 @@ EMAIL_ADDRESS=kellennobler2@gmail.com
 
 EMAIL_PASSWORD=ewyjlrsjtmsllqwb
 
-RECIPIENT_EMAIL=EMAILYOUWANTTOSENDITTO`
+RECIPIENT_EMAIL=EMAILYOUWANTTOSENDITTO
+
 
 
 4. Then run pip install -r requirements.txt in command terminal to install the requirements for this project. This may require you to type "cmd" into the search bar of this folder to access requirements.txt.
