@@ -8,7 +8,7 @@ from pathlib import Path
 dotenv_path = Path(__file__).resolve().parent / ".env"
 print("Does .env exist?", os.path.exists(dotenv_path))
 
-load_dotenv(dotenv_path=dotenv_path, override=True)
+load_dotenv(dotenv_path=dotenv_path, override=True) # checks if env exists
 
 # Fetch and validate keys (these must match other files)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -28,7 +28,7 @@ if NEWS_API_KEY:
 else:
     raise ValueError("❌ NEWS_API_KEY not found in .env")
 
-if EMAIL_ADDRESS and EMAILAPP_PASSWORD and RECIPIENT_EMAIL:
+if EMAIL_ADDRESS and EMAIL_PASSWORD and RECIPIENT_EMAIL:
     print("✅ Email credentials loaded")
 else:
     raise ValueError("❌ One or more email env variables missing")

@@ -9,7 +9,6 @@ from send_email import send_email
 print(">>> RUNNING LIVE env_loader.py")
 
 
-
 def generate_newsletter(topic="AI", max_articles=5):
     print("📰 Starting newsletter generation...")
     articles = fetch_articles(query=topic, max_articles=max_articles)
