@@ -28,7 +28,7 @@ if NEWS_API_KEY:
 else:
     raise ValueError("❌ NEWS_API_KEY not found in .env")
 
-if EMAIL_ADDRESS and EMAIL_PASSWORD and RECIPIENT_EMAIL:
+if EMAIL_ADDRESS and EMAILAPP_PASSWORD and RECIPIENT_EMAIL:
     print("✅ Email credentials loaded")
 else:
     raise ValueError("❌ One or more email env variables missing")
