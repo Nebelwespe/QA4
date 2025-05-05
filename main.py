@@ -1,11 +1,14 @@
 # main.py
 
-pip install requests openai python-dotenv
 
-
+from openai import OpenAI
 from fetch_news import fetch_articles
 from summarize import summarize_text
 from send_email import send_email
+
+print(">>> RUNNING LIVE env_loader.py")
+
+
 
 def generate_newsletter(topic="AI", max_articles=5):
     print("📰 Starting newsletter generation...")

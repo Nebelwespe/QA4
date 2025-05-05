@@ -4,13 +4,13 @@ from dotenv import load_dotenv
 import os
 from pathlib import Path
 
-# Load .env file from same directory as script
+# Load .env file
 dotenv_path = Path(__file__).resolve().parent / ".env"
-print("Does .env exist?", os.path.exists(dotenv_path))  # Feedback
+print("Does .env exist?", os.path.exists(dotenv_path))
 
 load_dotenv(dotenv_path=dotenv_path, override=True)
 
-# Fetch and validate keys
+# Fetch and validate keys (these must match other files)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")

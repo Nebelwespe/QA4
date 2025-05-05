@@ -3,7 +3,7 @@
 from openai import OpenAI
 from env_loader import OPENAI_API_KEY
 
-# Initialize OpenAI client
+# Initialize OpenAI client correctly
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 def summarize_text(text):
