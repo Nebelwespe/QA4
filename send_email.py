@@ -14,7 +14,7 @@ def send_email(subject, html_content):
     msg["From"] = EMAIL_ADDRESS
     msg["To"] = RECIPIENT_EMAIL
 
-    # Attach HTML body
+    # Attaches HTML body
     html_part = MIMEText(html_content, "html")
     msg.attach(html_part)
 
