@@ -2,7 +2,7 @@
 
 ### REQUIREMENTS:
 
-1. Create `.env` file in the QA4 folder containing the following information.
+1. Insert the following information in the `.env` file in the QA4 folder.
 
 2. Replace the value in OPENAI_API_KEY with your own API key.
 
@@ -21,6 +21,8 @@ EMAIL_PASSWORD=ewyjlrsjtmsllqwb
 
 RECIPIENT_EMAIL=EMAILYOUWANTTOSENDITTO
 
+
+**Important:** *Delete any previously generated __pycache__ folder first before changing the .env file. You need it to be fully updated for this to work.
 
 
 4. Then run pip install -r requirements.txt in command terminal to install the requirements for this project. This may require you to type "cmd" into the search bar of this folder to access requirements.txt.
@@ -45,3 +47,4 @@ python main.py
 ```
 
 This will send the newsletter using the credentials you provided.
+
