@@ -3,7 +3,9 @@
 ### REQUIREMENTS:
 
 1. Create `.env` file in the QA4 folder containing the following information.
+
 2. Replace the value in OPENAI_API_KEY with your own API key.
+
 3. Add the value of RECIPIENT_EMAIL for the email you wish for the newsletter to be sent to.
 
 
